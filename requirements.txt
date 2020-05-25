@@ -1,0 +1,4 @@
+tensorflow>=2.1.0
+moviepy==1.0.1
+numpy
+gym>=0.17.1

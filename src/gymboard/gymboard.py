@@ -4,6 +4,7 @@ import numpy as np
 from datetime import datetime
 import tensorflow as tf
 from moviepy.editor import ImageSequenceClip
+import gym
 
 class GymBoard(object):
     """
