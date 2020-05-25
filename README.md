@@ -1,4 +1,4 @@
-# GymBoard - A small wrapper class that lets you render render OpenAI Gym envs in TensorBoard
+# GymBoard - A small wrapper class that lets you render OpenAI Gym envs in TensorBoard
 <img src="https://raw.githubusercontent.com/mishig25/GymBoard/master/viz.gif" style="width:500px;"/>
 
 ### Installation:
