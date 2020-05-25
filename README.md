@@ -9,7 +9,7 @@ python setup.py sdist
 ```
 
 ### Example usage:
-in yout python file, call:
+in your python file, call:
 ```python
 import gym
 from gymboard import GymBoard
