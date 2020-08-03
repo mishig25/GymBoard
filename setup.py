@@ -21,5 +21,3 @@ setuptools.setup(
     python_requires='>=3.6',
     url="https://github.com/mishig25/GymBoard",
 )
-
-# run: python setup.py sdist

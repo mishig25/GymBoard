@@ -3,9 +3,7 @@
 
 ### Installation:
 ```bash
-git clone https://github.com/mishig25/GymBoard.git
-cd GymBoard
-python setup.py sdist
+pip install git+https://github.com/mishig25/GymBoard
 ```
 
 ### Example usage:
