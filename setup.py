@@ -13,7 +13,7 @@ setuptools.setup(
     name='gymboard',
     packages=['gymboard'],
     package_dir={'':'src'},
-    version='0.0.1',
+    version='0.0.2',
     author="Mishig Davaadorj",
     author_email="dmishig@gmail.com",
     description='Render OpenAI Gym envs in TensorBoard',

@@ -1,6 +1,6 @@
 Metadata-Version: 1.2
 Name: gymboard
-Version: 0.0.1
+Version: 0.0.2
 Summary: Render OpenAI Gym envs in TensorBoard
 Home-page: https://github.com/mishig25/GymBoard
 Author: Mishig Davaadorj

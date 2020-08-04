@@ -22,7 +22,7 @@ class GymBoard(object):
         step (int): Training step/epoch number.
     """
     
-    def __init__(self, logdir="logs/gymboard/", port=8081):
+    def __init__(self, logdir="logs/", port=6006):
         self.logdir = logdir
         self.logrun = self.logdir + datetime.now().strftime("%b_%d_%X") 
         self.port = port
@@ -66,14 +66,15 @@ class GymBoard(object):
         steps, rewards = [], []
         while True:
             steps.append(env.render('rgb_array'))
-            action = env.action_space.sample()
             try:
                 action = policy(np.expand_dims(state,axis=0))[0]
                 action = np.argmax(action)
-            except: pass
+            except: 
+                action = env.action_space.sample()
             state, reward, done, _ = env.step(action)
             rewards.append(reward)
-            if done: break
+            if done: 
+                break
         
         if fps is None:
             try: fps = env.metadata['video.frames_per_second']
@@ -100,8 +101,9 @@ class GymBoard(object):
         if step is None: step = self.step
         with self.writer.as_default():
             tf.summary.experimental.write_raw_pb(gif.SerializeToString(), step=step)    
+        env.close()
 
-    def show(self):
+    def display(self):
         """
         Show TensorBoard within Notebook environment (if possible). Otherwise, print instructions on how to run TensorBoard.
         """
